@@ -14,6 +14,18 @@ import {
   Date,
 } from './BlogCard.styled';
 
+import article from 'data/article.json';
+
 export const BlogCard = () => {
-  return <div>BlogCard</div>;
+  return (
+    <BlogCard
+      poster={article.poster}
+      tag={article.tag}
+      title={article.title}
+      description={article.description}
+      userName={article.name}
+      avatar={article.avatar}
+      postedAt={article.postedAt}
+    />
+  );
 };
